@@ -19,7 +19,7 @@ export default function HeroFlex({ children, reverse, description, imagePath, ti
                 <p className="text-zinc-600 sm:text-lg">{description}</p>
                 {children}
                 <div className="mt-4 mb-6 sm:mt-2 w-full flex">
-                    <a className="bg-black shadow-xl text-white py-3 text-sm font-semibold tracking-wide text-center w-72 rounded-md" href={`${href}`}>{cta}</a>
+                    <a className="bg-black shadow-xl text-white py-3 text-sm font-semibold tracking-wide text-center w-full sm:w-72 rounded-md" href={`${href}`}>{cta}</a>
                 </div>
             </div>
             <div className={`flex sm:w-1/2 ${reverse ? 'justify-start' : 'justify-end'}`}>
